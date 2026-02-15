@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BlogHub - Share your thoughts with the world. A modern, beautiful blog platform.">
+  <meta name="keywords" content="blog, writing, posts, modern, beautiful">
+  <meta name="author" content="BlogHub">
+  <meta property="og:title" content="BlogHub - Modern Blog Platform">
+  <meta property="og:description" content="Share your thoughts with the world on our beautiful blog platform">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:3000">
+  <title>BlogHub - Modern Blog Platform</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-out',
+            'slide-in': 'slideIn 0.3s ease-out',
+            'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            slideIn: {
+              '0%': { opacity: '0', transform: 'translateX(-20px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
